@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Utensil Cleaning Steps (Multi-Language Offline)</title>
+
+<style>
+  body { font-family: Arial, sans-serif; background: #f5f5f5; margin: 0; padding: 20px; }
+  .container { max-width: 700px; margin: auto; }
+
+  h1, h2 { text-align: center; }
+  h2 { margin-top: 30px; }
+
+  /* Simple Steps Cards */
+  .step-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  .step-card img { width: 100%; border-radius: 12px; }
+  .step-card button { 
+    background: #007bff; 
+    border: none; 
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    color: #fff; 
+    border-radius: 10px; 
+    font-size: 16px; 
+    cursor: pointer; 
+  }
+
+  /* Language Buttons */
+  .lang-btns { text-align:center; margin-bottom:20px; }
+  .lang-btns button {
+    margin: 5px; padding: 10px 18px; font-size: 16px;
+    background: #333; color: #fff; border: none; border-radius: 8px;
+    cursor: pointer;
+  }
+
+  /* Checklist Steps */
+  .checklist-section { margin-top: 40px; }
+  ul { list-style: none; padding: 0; }
+  .step-item {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.15);
+  }
+  .step-item input[type="checkbox"] { transform: scale(1.3); margin-right: 10px; }
+
+  .media-row {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .step-img {
+    width: 80px;
+    height: 80px;
+    background: #eee;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .audio-btn {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .icon { font-size: 22px; }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<h1>✔ Utensil Cleaning Steps (Multi-Language Offline)</h1>
+
+<!-- LANGUAGE BUTTONS -->
+<div class="lang-btns">
+  <button onclick="setLang('hi')">🇮🇳 Hindi</button>
+  <button onclick="setLang('en')">🇬🇧 English</button>
+  <button onclick="setLang('bn')">🇮🇳 Bengali</button>
+  <button onclick="setLang('kn')">🇮🇳 Kannada</button>
+  <button onclick="setLang('ta')">🇮🇳 Tamil</button>
+</div>
+
+<!-- SIMPLE 5-STEP MODULE -->
+<div id="simple-steps"></div>
+
+<!-- ADVANCED CHECKLIST SECTION -->
+<div class="checklist-section">
+  <h1>Utensils Cleaning – Advanced Checklist</h1>
+
+  <!-- SECTION 1 -->
+  <h2>1. Preparation / तैयारी / প্রস্তুতি / தயாரிப்பு / సిద్ధం</h2>
+  <ul>
+    <li class="step-item">
+      <label><input type="checkbox"> Wear PPE (gloves, apron).</label>
+      <div class="media-row">
+        <img src="images/placeholder.jpg" class="step-img" alt="">
+        <button class="audio-btn">🔊 Play</button>
+        <span class="icon">✔️</span>
+      </div>
+    </li>
+
+    <li class="step-item">
+      <label><input type="checkbox"> Clear and scrape food residues from plates and cookware.</label>
+      <div class="media-row">
+        <img src="images/placeholder.jpg" class="step-img" alt="">
+        <button class="audio-btn">🔊 Play</button>
+        <span class="icon">✔️</span>
+      </div>
+    </li>
+
+    <li class="step-item">
+      <label><input type="checkbox"> Sort utensils: crockery, cutlery, glassware, pots/pans, plastic items.</label>
+      <div class="media-row">
+        <img src="images/placeholder.jpg" class="step-img" alt="">
+        <button class="audio-btn">🔊 Play</button>
+        <span class="icon">✔️</span>
+      </div>
+    </li>
+  </ul>
+
+  <!-- SECTION 2 -->
+  <h2>2. Washing Sequence / धोने का क्रम / ধোয়ার ক্রম / கழுவும் வரிசை / శుభ్రపరచే క్రమం</h2>
+  <ul>
+    <li class="step-item">
+      <label><input type="checkbox"> Pre-rinse to remove loose debris.</label>
+      <div class="media-row">
+        <img src="images/placeholder.jpg" class="step-img" alt="">
+        <button class="audio-btn">🔊 Play</button>
+        <span class="icon">✔️</span>
+      </div>
+    </li>
+
+    <li class="step-item">
+      <label><input type="checkbox"> Degrease using warm water + detergent for oily cookware.</label>
+      <div class="media-row">
+        <img src="images/placeholder.jpg" class="step-img" alt="">
+        <button class="audio-btn">🔊 Play</button>
+        <span class="icon">✔️</span>
+      </div>
+    </li>
+
+    <li class="step-item">
+      <label><input type="checkbox"> Scrub with proper tools (soft sponge for non-stick, scouring pad for heavy soiling).</label>
+      <div class="media-row">
+        <img src="images/placeholder.jpg" class="step-img" alt="">
+        <button class="audio-btn">🔊 Play</button>
+        <span class="icon">✔️</span>
+      </div>
+    </li>
+
+    <li class="step-item">
+      <label><input type="checkbox"> Wash order: glasses → plates → cutlery → cookware.</label>
+      <div class="media-row">
+        <img src="images/placeholder.jpg" class="step-img" alt="">
+        <button class="audio-btn">🔊 Play</button>
+        <span class="icon">✔️</span>
+      </div>
+    </li>
+  </ul>
+
+  <!-- SECTION 3 -->
+  <h2>3. Sanitizing / कीटाणुनाशन / জীবাণুমুক্তকরণ / கிருமி நீக்கம் / శానిటైజేషన్</h2>
+  <ul>
+    <li class="step-item">
+      <label><input type="checkbox"> Use hot water (≥60°C) or chemical sanitizer as per label.</label>
+      <div class="media-row">
+        <img src="images/placeholder.jpg" class="step-img" alt="">
+        <button class="audio-btn">🔊 Play</button>
+        <span class="icon">✔️</span>
+      </div>
+    </li>
+
+    <li class="step-item">
+      <label><input type="checkbox"> Prepare sanitizer solution; immerse or spray for required dwell time.</label>
+      <div class="media-row">
+        <img src="images/placeholder.jpg" class="step-img" alt="">
+        <button class="audio-btn">🔊 Play</button>
+        <span class="icon">✔️</span>
+      </div>
+    </li>
+  </ul>
+
+  <!-- SECTION 4 -->
+  <h2>4. Drying & Storage / सुखाना और रखना / শুকানো ও সংরক্ষণ / உலர்த்தல் மற்றும் சேமிப்பு / ఆరబెట్టడం మరియు నిల్వ</h2>
+  <ul>
+    <li class="step-item">
+      <label><input type="checkbox"> Air dry on sanitized rack or use clean cloths.</label>
+      <div class="media-row">
+        <img src="images/placeholder.jpg" class="step-img" alt="">
+        <button class="audio-btn">🔊 Play</button>
+        <span class="icon">✔️</span>
+      </div>
+    </li>
+
+    <li class="step-item">
+      <label><input type="checkbox"> Store items clean, dry and inverted; avoid stacking moist utensils.</label>
+      <div class="media-row">
+        <img src="images/placeholder.jpg" class="step-img" alt="">
+        <button class="audio-btn">🔊 Play</button>
+        <span class="icon">✔️</span>
+      </div>
+    </li>
+
+    <li class="step-item">
+      <label><input type="checkbox"> Separate storage for cutting boards and utensils used for raw food.</label>
+      <div class="media-row">
+        <img src="images/placeholder.jpg" class="step-img" alt="">
+        <button class="audio-btn">🔊 Play</button>
+        <span class="icon">✔️</span>
+      </div>
+    </li>
+  </ul>
+
+  <!-- SECTION 5 -->
+  <h2>5. Special Care / विशेष देखभाल / বিশেষ যত্ন / சிறப்பு பராமரிப்பு / ప్రత్యేక జాగ్రత్త</h2>
+  <ul>
+    <li class="step-item">
+      <label><input type="checkbox"> Woodenware: minimal soaking; oil occasionally.</label>
+      <div class="media-row">
+        <img src="images/placeholder.jpg" class="step-img" alt="">
+        <button class="audio-btn">🔊 Play</button>
+        <span class="icon">✔️</span>
+      </div>
+    </li>
+
+    <li class="step-item">
+      <label><input type="checkbox"> Non-stick pans: avoid metal scrubbers; dry thoroughly.</label>
+      <div class="media-row">
+        <img src="images/placeholder.jpg" class="step-img" alt="">
+        <button class="audio-btn">🔊 Play</button>
+        <span class="icon">✔️</span>
+      </div>
+    </li>
+
+    <li class="step-item">
+      <label><input type="checkbox"> Glassware: handle by base; check for chips/cracks.</label>
+      <div class="media-row">
+        <img src="images/placeholder.jpg" class="step-img" alt="">
+        <button class="audio-btn">🔊 Play</button>
+        <span class="icon">✔️</span>
+      </div>
+    </li>
+
+    <li class="step-item">
+      <label><input type="checkbox"> Iron Kadai: dry immediately and apply thin oil layer to prevent rust.</label>
+      <div class="media-row">
+        <img src="images/placeholder.jpg" class="step-img" alt="">
+        <button class="audio-btn">🔊 Play</button>
+        <span class="icon">✔️</span>
+      </div>
+    </li>
+  </ul>
+
+</div> <!-- END CHECKLIST -->
+
+</div> <!-- END CONTAINER -->
+
+<script>
+/* ---------------------------
+   SIMPLE 5-STEP LANGUAGE DATA
+---------------------------- */
+
+const data = {
+  hi: [
+    { title: "✔ चरण 1: बर्तन धोएं", desc: "बर्तन को पानी से धोकर ढीले टुकड़े हटाएँ।", img: "images/step1.jpg", audio: "audio/step1.mp3" },
+    { title: "✔ चरण 2: साबुन लगाएँ", desc: "स्क्रबर पर साबुन लगाएँ।", img: "images/step2.jpg", audio: "audio/step2.mp3" },
+    { title: "✔ चरण 3: अच्छे से रगड़ें", desc: "बर्तन को अंदर बाहर रगड़ें।", img: "images/step3.jpg", audio: "audio/step3.mp3" },
+    { title: "✔ चरण 4: दोबारा धोएँ", desc: "साबुन पूरी तरह धोएँ।", img: "images/step4.jpg", audio: "audio/step4.mp3" },
+    { title: "✔ चरण 5: बर्तन सुखाएँ", desc: "सूखा दें या कपड़े से पोंछें।", img: "images/step5.jpg", audio: "audio/step5.mp3" }
+  ],
+  en: [
+    { title: "✔ Step 1: Rinse Utensils", desc: "Rinse utensils with water to remove loose food.", img: "images/step1.jpg", audio: "audio/step1.mp3" },
+    { title: "✔ Step 2: Apply Soap", desc: "Put dish soap on a scrubber.", img: "images/step2.jpg", audio: "audio/step2.mp3" },
+    { title: "✔ Step 3: Scrub Well", desc: "Scrub inside and outside.", img: "images/step3.jpg", audio: "audio/step3.mp3" },
+    { title: "✔ Step 4: Final Rinse", desc: "Rinse again to remove soap.", img: "images/step4.jpg", audio: "audio/step4.mp3" },
+    { title: "✔ Step 5: Dry Utensils", desc: "Air-dry or wipe with cloth.", img: "images/step5.jpg", audio: "audio/step5.mp3" }
+  ],
+  bn: [
+    { title: "✔ ধাপ ১: বাসন ধোয়া", desc: "পানিতে ধুয়ে আলগা টুকরো সরান।", img: "images/step1.jpg", audio: "audio/step1.mp3" },
+    { title: "✔ ধাপ ২: সাবান লাগান", desc: "স্ক্রাবারে সাবান লাগান।", img: "images/step2.jpg", audio: "audio/step2.mp3" },
+    { title: "✔ ধাপ ৩: ভালো করে ঘষুন", desc: "ভিতর ও বাইরে ঘষুন।", img: "images/step3.jpg", audio: "audio/step3.mp3" },
+    { title: "✔ ধাপ ৪: আবার ধুয়ে নিন", desc: "সাবান পুরো ধুয়ে ফেলুন।", img: "images/step4.jpg", audio: "audio/step4.mp3" },
+    { title: "✔ ধাপ ৫: শুকিয়ে নিন", desc: "শুকোতে দিন বা কাপড়ে মুছুন।", img: "images/step5.jpg", audio: "audio/step5.mp3" }
+  ],
+  kn: [
+  { title: "✔ ಹಂತ 1: ಪಾತ್ರೆಗಳನ್ನು ತೊಳೆಯಿರಿ", desc: "ನೀರಿನಲ್ಲಿ ತೊಳೆದು ಸಡಿಲವಾದ ತುಣುಕುಗಳನ್ನು ತೆಗೆದುಹಾಕಿ.", img: "images/step1.jpg", audio: "audio/kn_step1.mp3" },
+  { title: "✔ ಹಂತ 2: ಸಾಬೂನು ಹಚ್ಚಿ", desc: "ಸ್ಕ್ರಬ್ಬರ್ ಮೇಲೆ ಡಿಶ್ ಸಾಬೂನು ಹಚ್ಚಿ.", img: "images/step2.jpg", audio: "audio/kn_step2.mp3" },
+  { title: "✔ ಹಂತ 3: ಚೆನ್ನಾಗಿ ಒರೆಸಿ", desc: "ಪಾತ್ರೆಯ ಒಳಗೂ ಹೊರಗೂ ಒತ್ತಿ ಒರೆಸಿ.", img: "images/step3.jpg", audio: "audio/kn_step3.mp3" },
+  { title: "✔ ಹಂತ 4: ಮತ್ತೆ ತೊಳೆಯಿರಿ", desc: "ಸಾಬೂನು ಸಂಪೂರ್ಣವಾಗಿ ದೂರಾಗುವವರೆಗೂ ತೊಳೆಯಿರಿ.", img: "images/step4.jpg", audio: "audio/kn_step4.mp3" },
+  { title: "✔ ಹಂತ 5: ಪಾತ್ರೆಗಳನ್ನು ಒಣಗಿಸಿ", desc: "ಗಾಳಿಯಲ್ಲಿ ಒಣಗಲು ಬಿಡಿ ಅಥವಾ ಬಟ್ಟೆಯಿಂದ ಒರೆಸಿ.", img: "images/step5.jpg", audio: "audio/kn_step5.mp3" }
+  ],
+  ta: [
+    { title: "✔ படி 1: பாத்திரங்களை கழுவவும்", desc: "தண்ணீரால் கழுவி உணவு துகள்களை நீக்கவும்.", img: "images/step1.jpg", audio: "audio/ta_step1.mp3" },
+    { title: "✔ படி 2: சோப்பு பயன்படுத்தவும்", desc: "ஸ்க்ரப்பருக்கு டிஷ் சோப்பு தடவவும்.", img: "images/step2.jpg", audio: "audio/ta_step2.mp3" },
+    { title: "✔ படி 3: நன்றாகத் துருவவும்", desc: "பாத்திரத்தின் உள்ளும் வெளியும் துருவவும்.", img: "images/step3.jpg", audio: "audio/ta_step3.mp3" },
+    { title: "✔ படி 4: மீண்டும் கழுவவும்", desc: "சோப்பு நீங்கும் வரை மீண்டும் கழுவவும்.", img: "images/step4.jpg", audio: "audio/ta_step4.mp3" },
+    { title: "✔ படி 5: பாத்திரங்களை உலர்த்தவும்", desc: "காற்றில் உலர விடவும் அல்லது துணியால் துடைக்கவும்.", img: "images/step5.jpg", audio: "audio/ta_step5.mp3" }
+  ],
+};
+
+function playAudio(url) {
+  new Audio(url).play();
+}
+
+function setLang(lang) {
+  const box = document.getElementById("simple-steps");
+  box.innerHTML = "";
+
+  data[lang].forEach(step => {
+    box.innerHTML += `
+      <div class="step-card">
+        <img src="${step.img}" alt="">
+        <h3>${step.title}</h3>
+        <p>${step.desc}</p>
+        <button onclick="playAudio('${step.audio}')">🔊 Hear Audio</button>
+      </div>
+    `;
+  });
+}
+
+setLang("hi"); // Default language
+</script>
+</body>
+</html>
