@@ -1,2 +1,2 @@
 # beeglePSNTrainings
-PSN Trainings
+PSN Trainings for UC
